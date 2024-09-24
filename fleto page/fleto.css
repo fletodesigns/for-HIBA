@@ -1,142 +1,70 @@
 /* Theme */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-    --main-color: #36ffbf;
-    --bg-color: #ffffff;
-    --dark-color: #0e152c;
-    --second-bg-color: #efefef;
-    --text-color: #0e152c;
-    --accent-color: #ff69b4; /* new accent color */
-    --transition: all 0.3s;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    transition: var(--transition);
-    max-width: 1200px; /* added max-width */
-    margin: 0 auto; /* added horizontal centering */
-  }
-  
-  header {
-    background-color: var(--main-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 10px 0; /* increased padding */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --main-color: #36ffbf;
+  --bg-color: #ffffff;
+  --dark-color: #0e152c;
+  --second-bg-color: #efefef;
+  --text-color: #0e152c;
+  --transition: all 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* .backBtn{
+    background: #000;
+    width:100 ;
+} */
+
+
+
+.navbar{
     display: flex;
-    justify-content: space-between;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 50px; /* increased font size */
-    font-weight: 700; /* added font weight */
-    margin-right: 10px;
-  }
+    margin-left: 10px;
 
-  header img{
-    width: 60px;
-    margin-right: 16px;
-  }
-  
-  section {
-    max-width: 900px;
-    margin: 40px auto; /* increased margin */
-    padding: 30px; /* increased padding */
-    background-color: var(--second-bg-color);
+}
+
+.navbar img{
+    width: 30px;
+    height: 40px;
+}
+
+main{
+    margin-left: 20px;
+    margin-top: 100px;
+    /* width: ; */
+}
+
+.about h1{
+    font-size: 30px;
+    font-family: poppins;
+    margin-bottom: 20px;
+
+}
+
+.about p{
+    font-size: 19px;
+}
+
+.projects{
+    margin-top: 100px;
+}
+
+.projects h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.projects img{
+    width:350px ;
+    height: 210px;
+    margin-bottom: 30px;
+    /* margin-right: 20px; */
+    border: #0e152c solid 2px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex; /* added flexbox layout */
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  section h2 {
-    color: var(--dark-color);
-    margin-bottom: 20px; /* increased margin */
-    font-size: 2.2rem; /* increased font size */
-    font-weight: 600; /* added font weight */
-    border-bottom: 2px solid var(--main-color);
-    display: inline-block;
-  }
-  
-  section p, ul {
-    font-size: 1.2rem; /* increased font size */
-    color: var(--text-color);
-    margin-bottom: 20px; /* added margin */
-  }
-  
-  ul {
-    margin-left: 30px; /* increased margin */
-  }
-  
-  li {
-    margin-bottom: 15px; /* increased margin */
-  }
-  
-  .image-hover-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
 }
-
-.image-container {
-    position: relative;
-    width: 300px;
-    height: 200px;
-}
-
-.hover-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transition: var(--transition);
-}
-
-.hover-text {
-    /* position: absolute; */
-    top: 50%;
-    left: 50%;
-    transform: translateY(-195px) translateX(-9px);
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: #36ffbf4a;
-    padding: 5px 10px;
-    border-radius: 10px;
-    width: 295px;
-    opacity: 0;
-    transition: var(--transition);
-    pointer-events: none;
-}
-
-.image-container:hover .hover-text {
-    opacity: 1;
-}
-
-.image-container:hover .hover-image {
-    filter: brightness(70%);
-    transform: scale(1.05);
-}
-  
-  footer {
-    text-align: center;
-    padding: 30px; /* increased padding */
-    background-color: var(--dark-color);
-    color: var(--main-color);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 1.1rem; /* increased font size */
-  }
