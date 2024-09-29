@@ -15,3 +15,15 @@ closeBtn.addEventListener('click', () => {
     appBoxContainer.classList.toggle('app-con-nav-active');
     appBox.classList.toggle('app-nav-active');
 });
+
+const passwordContainer = document.getElementById('passwordContainer');
+const passwordInput = document.getElementById('passwordInput');
+const enterBtn = document.getElementById('enterBtn');
+
+function openPage() {
+    if(passwordInput.value = "WEfleto.7"){
+        passwordContainer.style.display = 'none';
+    }
+}
+
+enterBtn.addEventListener('click', openPage);
