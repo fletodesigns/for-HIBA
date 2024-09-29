@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>for HIBA</title>
+</head>
+
+<body>
+
+    <!-- main nav bar -->
+    <div class="sidebar">
+        <div class="profile-section">
+            <img src="/img/logo2.png" alt="">
+        </div>
+
+        <nav class="menu">
+            <h3>BROWSE</h3>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="donate_page/donate.html"><i class='bx bx-rupee'></i>Donate</a></li>
+                <li><a href="fleto_page/fleto.html"><i class='bx bx-code-alt'></i>Creator</a></li>
+                <li><a href="help_page/help.html"><i class="fa-solid fa-circle-info"></i>Help</a></li>
+                <li><a href="edit_page/edit.html"><i class='bx bxs-edit'></i> Edit</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 
+    settings bar
+    <div class="settings-bar"> 
+        <div class="the-col-con">
+            <button id="color-1"></button>
+            <button id="color-2"></button>
+            <button id="color-3"></button>
+            <button id="color-4"></button>
+        </div>
+        <hr>
+        <div class="dar-mod-con">
+            <button><i class='bx bx-sun'></i></button>
+        </div>
+    </div> -->
+
+    <!-- main header -->
+    <header class="header">
+        <button id="menu-btn">
+            <div class="burger">
+                <div class="bu-1"></div>
+                <div class="bu-2"></div>
+                <div class="bu-3"></div>
+            </div>
+        </button>
+        <a href="/fleto_page/fleto.html">
+            <button id="fle-btn">
+                <img src="/img/black_fleto.png">
+            </button>
+        </a>
+    </header>
+    <div class="app-box-container">
+        <!-- total app container -->
+        <div class="app-box">
+
+            <!-- a div for gap -->
+            <div class="gap-1"></div>
+
+            <!-- main contents -->
+            <main class="main">
+
+                <div class="don-now-con">
+                    <a href="donate_page/donate.html">
+                        <button id="donate-btn"> ₹ Donate now</button>
+                    </a>
+                </div>
+
+                <!-- total donation -->
+                <div class="tot-don-con">
+                    <h3 class="tot-don-te">₹ <span id="totalDonation">00,00,000</span></h3>
+                </div>
+
+                <!-- home image slider -->
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="img/post2.jpg" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="img/post3.avif" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="img/post4.avif" alt="Slide 3">
+                        </div>
+                        <div class="slide">
+                            <img src="img/post1.avif" alt="Slide 4">
+                        </div>
+                        <div class="slide">
+                            <img src="img/post5.jpg" alt="Slide 5">
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+
+                <!-- Top Ranks -->
+                <div class="top-ran-con">
+                    <div class="gol-ran-con">
+                        <img src="img/gold_medal.svg" alt="gold_medal">
+                        <h3 id="rank1Name">Anas T</h3>
+                        <p id="rank1Donation">₹ 002.00</p>
+                    </div>
+                    <hr>
+                    <div class="sil-ran-con">
+                        <img src="img/silvermedal.svg" alt="silver_medal">
+                        <h3 id="rank2Name">Fauzan M</h3>
+                        <p id="rank2Donation">₹ 00,000</p>
+                    </div>
+                    <hr>
+                    <div class="bro-ran-con">
+                        <img src="img/bronzemedal.svg" alt="bronze_medal">
+                        <h3 id="rank3Name">Nihad K</h3>
+                        <p id="rank3Donation">₹ 00,000</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="scripts/front_end.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
