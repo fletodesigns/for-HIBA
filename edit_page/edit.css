@@ -328,3 +328,58 @@ header.header button.active .bu-3 {
 .ran-don-ed-con input {
   width: 120px;
 }
+
+.password-container {
+  width: 100%;
+  height: 100vh;
+  background: url(/img/fleto-bg.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  /* gap: 20px; */
+}
+
+.password-in-container {
+  width: 300px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgb(0, 0, 0, 0.1);
+  border: 0.1px solid #42424238;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#passwordInput {
+  backdrop-filter: blur(0);
+  padding: 15px;
+  border-radius: 5px;
+  background: var(--bg-color);
+  outline: none;
+  font-size: 20px;
+  box-shadow: 0 0 50px rgb(0, 0, 0, 0.1);
+  border: 0.1px solid #42424238;
+}
+
+#enterBtn {
+  width: 284px;
+  padding: 15px;
+  border-radius: 5px;
+  background: var(--main-color);
+  outline: none;
+  font-size: 20px;
+  box-shadow: 0 0 25px rgb(0, 0, 0, 0.1);
+  border: 0.1px solid #42424238;
+}
+
+#enterBtn:active {
+  transform: scale(0.9);
+}
