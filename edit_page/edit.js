@@ -21,9 +21,14 @@ const passwordInput = document.getElementById('passwordInput');
 const enterBtn = document.getElementById('enterBtn');
 
 function openPage() {
-    if(passwordInput.value = "WEfleto.7"){
+    if(passwordInput.value === "WEfleto.7"){
         passwordContainer.style.display = 'none';
+    }
+    else {
+        alert("Incorrect Password")
     }
 }
 
-enterBtn.addEventListener('click', openPage);
+enterBtn.onclick = () => {
+    openPage();
+}
