@@ -48,17 +48,30 @@
     <div class="app-box-container">
         <!-- total app container -->
         <div class="app-box">
+            <div class="details-container" id="detailsContainer">
+                <header>
+                    <img src="/img/paypal.png" alt="Paypal" id="payImg">
+                    <h3 id="payAppName">Paypal</h3>
+                    <button id="closeBtn"><i class='bx bx-x'></i></button>
+                </header>
+                <div class="details">
+                    <h2>Name :</h2>
+                    <p id="payName">for HIBA</p>
+                    <h2 id="payType">Number :</h2>
+                    <p id="payNumber">1234567890</p>
+                </div>
+            </div>
             <div class="container">
-                <button class="payment-btn paypal-btn">
+                <button class="payment-btn paypal-btn" id="paypalBtn">
                     <img src="/img/paypal.png" alt="PayPal">
                 </button>
-                <button class="payment-btn gpay-btn">
+                <button class="payment-btn gpay-btn" id="gpayBtn">
                     <img src="/img/gpay.jpg" alt="Google Pay">
                 </button>
-                <button class="payment-btn paytm-btn">
+                <button class="payment-btn paytm-btn" id="paytmBtn">
                     <img src="/img/paytm.png" alt="Paytm">
                 </button>
-                <button class="payment-btn phonepe-btn">
+                <button class="payment-btn phonepe-btn" id="phonepeBtn">
                     <img src="/img/phonepe.png" alt="PhonePe">
                 </button>
             </div>
