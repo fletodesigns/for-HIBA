@@ -295,3 +295,54 @@ header.header button.active .bu-3 {
 .payment-btn:hover {
   transform: scale(1.05);
 }
+
+.details-container {
+  position: fixed;
+  z-index: 100;
+  width: 300px;
+  box-shadow: 0 0 20px #00000050;
+  border-radius: 20px;
+  background: var(--bg-color);
+  display: none;
+}
+
+.details-container header {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.details-container header img {
+  width: 70px;
+  box-shadow: 5px 5px 15px #00000030;
+  border-radius: 10px;
+}
+
+.details-container header h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.details-container header button {
+  width: 65px;
+  height: 65px;
+  font-size: 50px;
+  font-weight: 400;
+  border: 0;
+  background: var(--bg-color);
+  box-shadow: 5px 5px 15px #00000030;
+  border-radius: 10px;
+}
+
+.details-container .details{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px 30px 50px;
+}
+
+.details-container .details p{
+  font-size: 25px;
+}
